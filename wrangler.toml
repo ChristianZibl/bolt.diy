@@ -1,31 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
-
-# Nom du projet sur Cloudflare Workers
 name = "bolt"
-
-# Active la compatibilité avec Node.js (indispensable pour Node.js >=18)
-compatibility_flags = ["nodejs_compat"]
-
-# Date de compatibilité (mettre la dernière date disponible)
-compatibility_date = "2024-03-06"  # Remplace par la dernière version disponible
-
-# Active la compatibilité avec les modules Node.js sur Cloudflare Workers
-node_compat = true
-
-# Répertoire de sortie de la build pour Cloudflare Pages
+compatibility_date = "2024-07-01"
 pages_build_output_dir = "build/client"
-
-# Active les logs et désactive l'envoi de métriques à Cloudflare
-logpush = true
 send_metrics = false
-
-# Configuration des environnements (ex: production et développement)
-[env.production]
-name = "bolt-production"
-compatibility_date = "2024-03-06"
-vars = { NODE_ENV = "production" }
-
-[env.development]
-name = "bolt-dev"
-compatibility_date = "2024-03-06"
-vars = { NODE_ENV = "development" }
