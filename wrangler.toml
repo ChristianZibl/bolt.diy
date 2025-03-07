@@ -2,5 +2,9 @@
 name = "bolt"
 compatibility_flags = ["nodejs_compat"]
 compatibility_date = "2024-09-23"
+
+[vars]
+NODE_OPTIONS = "--experimental-modules"
+
 pages_build_output_dir = "./build/client"
 send_metrics = false
